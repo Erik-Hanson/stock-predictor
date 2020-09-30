@@ -1,10 +1,9 @@
-import pandas as pd
-import datetime
-import pandas_datareader.data as web
-from pandas import Series, DataFrame
+import funcs
 
-start = datetime.datetime(2010, 1, 1)
-end = datetime.datetime(2017, 1, 11)
+def main():
+  #funcs.search_company_stock_history()
+  funcs.compute_rolling_average()
 
-df = web.DataReader("GOOGL", 'yahoo', start, end)
-print(df)
+if __name__ == "__main__":
+  main()
+
